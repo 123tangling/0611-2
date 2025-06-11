@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>作業: 二維陣列</title>
+</head>
+<body>
+    <h2>作業: 二維陣列</h2>
+    <script>
+        let scores = [
+            ["姓名", "國文", "英文", "數學"],
+            ["王大同", 85, 88, 77],
+            ["林麥可", 99, 86, 89],
+            ["張淑芬", 75, 92, 86]
+        ];
+
+        document.write('<table border="1" cellpadding="10">');
+
+        for(let i = 0; i < scores.length; i++) {
+            document.write('<tr>');
+            for(let j = 0; j < scores[i].length; j++) {
+                document.write('<td>' + scores[i][j] + '</td>');
+            }
+            document.write('</tr>');
+        }
+
+        document.write('</table>');
+    </script>
+</body>
+</html>

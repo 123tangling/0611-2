@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>花卉介紹</h1>
+        <button onclick="changetoexps();">1.繡球花</button>
+        <button onclick="changetoexps1();">2.文心蘭</button>
+        <button onclick="changetoexps2();">3.百合花</button>
+        <button onclick="changetoexps3();">4.鬱金香</button>
+    </div>
+    <br/>
+    <div id="about" style="display: none;">2024繡球花季到啦！每年5月至6月初夏季節，粉藍、粉紫、粉紅等各色錦簇花團，從陽明山竹子湖、新北萬里高家花田、雪霸休閒農場、武陵農場、明池森林遊樂區等，精選全台超過10處觀賞繡球花的推薦景點，賞花之餘，也一起解密繡球花冷知識！ <img src="321.jpg" width="300" height="300"></div>
+    <div id="exps" style="display: none;">文心蘭，取其優雅文質玲瓏心，又可意會又可言傳，故在本省自從最早有「文心蘭」的稱呼出現後，便沿pic2用成習，也因其花朵頗似穿著膨鬆舞裙、迎風招展婆娑起舞的女郎，而有人稱為「跳舞蘭」，在切花和盆花市場上都佔有很重要的一席之地。<img src="654.jpg" width="300" height="300"></div>
+    <div id="about2" style="display: none;">百合屬，是百合目百合科的一屬。其下有100餘種，有時通稱為百合花，均為多年生草本鱗莖植物，主要自然分布於亞洲東部、歐洲、北美洲等北半球溫帶地區。 百合屬物種及人工雜交所培育的品種常被運用於切花及景觀設計中，例如OT百合、東方型百合、玫瑰百合等。 百合屬植物對貓等動物有劇毒，因此用其為觀賞植物時應注意。<br><img src="987.png" width="300" height="300"></div>
+    <div id="about3" style="display: none;">紫色鬱金香花語：高貴的、永恆的愛、無盡的愛。 送給情人、閨蜜姊妹淘都是不錯的選擇， 顏色與花種會因為季節而有所不同。<br><img src="963.jpg" width="300" height="300"></div>
+    <script>
+        function changetoexps(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            let about2Div=document.querySelector("#about2");
+            let about3Div=document.querySelector("#about3");
+            aboutDiv.style.display="block";
+            expsDiv.style.display="none";
+            about2.style.display="none";
+            about3.style.display="none";
+        }
+        function changetoexps1(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            let about2Div=document.querySelector("#about2");
+            let about3Div=document.querySelector("#about3");
+            aboutDiv.style.display="none";
+            expsDiv.style.display="block";
+            about2.style.display="none";
+            about3.style.display="none";
+        }
+        function changetoexps2(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            let about2Div=document.querySelector("#about2");
+            let about3Div=document.querySelector("#about3");
+            aboutDiv.style.display="none";
+            expsDiv.style.display="none";
+            about2.style.display="block";
+            about3.style.display="none";
+        }
+        function changetoexps3(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            let about2Div=document.querySelector("#about2");
+            let about3Div=document.querySelector("#about3");
+            aboutDiv.style.display="none";
+            expsDiv.style.display="none";
+            about2.style.display="none";
+            about3.style.display="block";
+        }
+    </script>
+</body>
+</html>

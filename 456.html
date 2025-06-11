@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的夢想與規劃</title>
+    <style>
+        /* 背景漸層 */
+        body {
+            margin: 0;
+            font-family: "微軟正黑體", sans-serif;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            color: #333;
+            padding: 20px 0 0 0; /* 預留導覽列高度 */
+            scroll-behavior: smooth; /* 平滑滾動 */
+        }
+        /* 導覽列 */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 111, 145, 0.9);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe6eb;
+        }
+        /* 容器 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            padding: 30px 40px;
+        }
+        /* 每段區塊 */
+        section {
+            margin-bottom: 40px;
+        }
+        /* 標題 */
+        h2 {
+            color: #ff6f91;
+            border-bottom: 3px solid #ff6f91;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        /* 內文 */
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        /* 圖片樣式 */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border: 4px solid #ff6f91;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(255,111,145,0.3);
+        }
+        /* 響應式調整 */
+        @media (max-width: 600px) {
+            nav {
+                gap: 15px;
+                padding: 10px 0;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+            .container {
+                padding: 20px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav>
+
+        <a href="#dream">未來夢想(目標)</a>
+        <a href="#short-term">短期規劃目標</a>
+        <a href="#interest">最有興趣的事</a>
+        <a href="#trouble">我對目前階段的困擾</a>
+        
+    </nav>
+
+    <div class="container">
+        <section id="dream">
+            <h2>未來夢想(目標)</h2>
+            <p>
+                我希望成為優秀工程師，參與大型專案開發，持續學習新技術，為社會帶來創新便利。
+            </p>
+            <img src="123.webp" alt="未來夢想圖片" />
+        </section>
+    
+        <section id="short-term">
+            <h2>短期規劃目標</h2>
+            <p>
+                未來五年內學習前端，深入掌握框架技術，參加兩個實戰專案，提升經驗與合作力。
+            </p>
+            <img src="456.avif" alt="短期規劃圖片" />
+        </section>
+    
+        <section id="interest">
+            <h2>最有興趣的事</h2>
+            <p>
+                我喜歡人工智慧領域，用程式解決問題， 挑戰自我不斷進步，探索機器學習奧秘。
+            </p>
+            <img src="789.jpg" alt="興趣圖片" />
+        </section>
+    
+        <section id="trouble">
+            <h2>我對目前階段的困擾</h2>
+            <p>
+                時間管理是困難點，學習資源太多樣，常感資訊過於龐雜，不知如何有效安排。
+            </p>
+        </section>
+    </div>
+    
+</body>
+</html>

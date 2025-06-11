@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>作業範例</title>
+<style>
+  /* 整體字型 */
+  body {
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    margin: 20px;
+    background: #fff;
+    color: #333;
+  }
+
+  /* 標題區 */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-family: "標楷體", serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 陰影 */
+    margin-bottom: 5px;
+  }
+  header .slogan {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+
+  /* 主體區塊左右分割 */
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* 左邊照片區 */
+  .left {
+    flex: 1;
+    background-color: #4b7981; /* 藍色背景 */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  /* 右邊內容區 */
+  .right {
+    flex: 2;
+    background-color: #a5d3d6; /* 橘色背景 */
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    color: #222;
+  }
+
+  /* 右邊兩欄 */
+  .right > div {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  /* 右邊欄位標題 */
+  .right h3 {
+    background-color: #ffc0cb;
+    margin-top: 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  /* 右邊段落文字 */
+  .right p, .right li {
+    line-height: 1.5;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>網站標題</h1>
+  <div class="slogan">影響我最深的一句話</div>
+</header>
+
+<div class="container">
+  <div class="left">
+    <img src="123.webp" alt="個人照片" />
+  </div>
+  <div class="right">
+    <div>
+      <h3>那些能帶給我快樂的事情</h3>
+      <p>在生活的旅途中，一些簡短而有力的勵志短句能夠成為我們前行的動力，這些短句不僅僅是文字，更是一種能量，能夠激發我們內心的潛能，增強自信，帶來積極的心理暗示。</p>
+
+      <h3>我最喜歡的清新文字</h3>
+      <ol>
+        <li>人生就像爬山，要保持平衡，就必須一直向前。</li>
+        <li>我們應該有毅力，尤其要有信心。</li>
+        <li>行動是成功的基礎，沒有行動，一切都是空談。</li>
+      </ol>
+
+      <h3>我最喜歡的一首歌—勇氣</h3>
+      <p>終於做了這個決定<br />
+      別人怎麼說 我不理<br />
+      只要你也一樣的肯定<br />
+      我願意天涯海角都隨你去</p>
+    </div>
+
+    <div>
+      <p>我的心一直溫習說服自己<br />
+      最怕你忽然說要放棄<br />
+      愛真的需要勇氣來面對流言蜚語<br />
+      只要你一個眼神肯定 我的愛就有意義<br />
+      我們都需要勇氣去相信會在一起<br />
+      人潮擁擠 我能願意你放在我手心裡 你的真心<br />
+      終於做了這個決定<br />
+      別人怎麼說 我不理<br />
+      只要你也一樣的肯定<br />
+      我願意天涯海角都隨你去<br />
+      我知道一切不容易<br />
+      我的心一直溫習說服自己<br />
+      最怕你忽然說要放棄<br />
+      愛真的需要勇氣來面對流言蜚語<br />
+      只要你一個眼神肯定 我的愛就有意義</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
